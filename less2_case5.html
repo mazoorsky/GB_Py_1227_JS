@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		"use strict";
+        
+
+        function mathOperation(arg1, arg2, operation) {
+            switch(operation) {
+                case operation = "сложить":
+                    return getSum(arg1, arg2);
+                    break;
+                case operation = "вычесть":
+                    return getSubtr(arg1, arg2);
+                    break;
+                case operation = "умножить":
+                    return getMul(arg1, arg2);
+                    break;
+                case operation = "разделить":
+                    return getDiv(arg1, arg2);
+                    break;
+            }
+        }
+
+        function getSum(a, b) {
+            let sum = a + b;
+            return sum;
+        }
+
+        function getSubtr(a, b) {
+            let subtr = a - b;
+            return subtr;
+        }
+
+        function getMul(a, b) {
+            let mul = a * b;
+            return mul;
+        }
+
+        function getDiv(a, b) {
+            let div = a / b;
+            return div;
+        }
+
+        let x = +prompt("Введите первое число");
+        let y = +prompt("Введите второе число");
+        let oper = prompt("Что сделать с числами (сложить/вычесть/умножить/разделить)?");
+        let result = mathOperation(x, y, oper);
+        alert("Результат операции: " + result);
+
+        
+        
+        
+	</script>
+</body>
+</html>

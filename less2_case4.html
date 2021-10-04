@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		"use strict";
+
+        function getSum(a, b) {
+            let sum = a + b;
+            return sum;
+        }
+
+        function getSubtr(a, b) {
+            let subtr = a - b;
+            return subtr;
+        }
+
+        function getMul(a, b) {
+            let mul = a * b;
+            return mul;
+        }
+
+        function getDiv(a, b) {
+            let div = a / b;
+            return div;
+        }
+
+        let x = +prompt("Введите первое число");
+        let y = +prompt("Введите второе число");
+        let resSum = getSum(x, y);
+        let resSubtr = getSubtr(x, y);
+        let resMul = getMul(x, y);
+        let resDiv = getDiv(x, y);
+        alert("Результат сложения: " + resSum);
+        alert("Результат вычитания: " + resSubtr);
+        alert("Результат умножения: " + resMul);
+        alert("Результат деления: " + resDiv);
+        
+	</script>
+</body>
+</html>

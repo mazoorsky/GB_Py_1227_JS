@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		"use strict";
+
+    
+		let a = 6, b = -5;
+        let result = null;
+        if (a >= 0 && b >= 0){ // если числа положительные или 0
+            result = a - b;
+            alert("Разность чисел: " + result);
+        }else if (a < 0 && b < 0){ // если числа отрицательные
+            result = a * b;
+            alert("Произведение чисел: " + result);
+        }else if ((a >= 0 && b < 0) || (a < 0 && b >= 0)){ // если одно из чисел положительное, а другое отрицательное
+            result = a + b;
+            alert("Сумма чисел: " + result);
+        }
+
+	</script>
+</body>
+</html>
